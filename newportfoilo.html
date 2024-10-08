@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Prasad Sharma's Personal Webpage</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgb(153, 153, 204);
+        }
+        div {
+            display: flex;
+        }
+        div a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        div a:hover {
+            text-decoration: underline;
+        }
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            padding: 30px;
+        }
+        .about-section img {
+            max-width: 150px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .about-section .content {
+            display: flex;
+            flex-direction: column;
+        }
+        .about-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>My Portfolio</h1>
+        <div> 
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </header>
+
+    <section id="About">
+        <h1>Krishna Prasad Sharma</h1>
+        <p>Hello! My name is Krishna Prasad Sharma. I am currently studying at the Royal Institute of Management (RIM).</p>
+
+        <div class="about-section">
+           
+            <img src="profile.jpg" alt="Profile picture">
+
+            
+            <div class="content">
+                <h2>My Hobbies and Interests</h2>
+                <ul>
+                    <li>Programming</li>
+                    <li>Trekking in the mountains</li>
+                    <li>Exploring new technologies</li>
+                    <li>Playing Ball Games</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
