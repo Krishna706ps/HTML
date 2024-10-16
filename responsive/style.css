@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -47,7 +48,7 @@ nav img{
 .nav-link ul li:hover::after{
     width: 100%;
 }
-.text-box {
+.text-box{
     width: 90%;
     color: #fff;
     position: absolute;
