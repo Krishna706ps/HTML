@@ -153,7 +153,7 @@ h3{
     margin: 10px 0;
 }
 .course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0px pink;
 }
 @media(max-width: 700px){
     .raw{
@@ -305,12 +305,12 @@ h3{
     margin-top: 20px;
     font-weight: 600;
 }
-.icons .fa{
-    color: #f44336;
+.icons .fab{
+    color: black;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
-.fa-heart-o{
+.fab-heart-o{
     color: #f44336;
 }
