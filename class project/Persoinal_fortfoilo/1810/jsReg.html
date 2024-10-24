@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width">
+         <title>Registration Form</title>
+         <style>
+            boby{
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            .form-container{
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                max-width: 400px;
+                margin: auto;
+            }
+            .form-group{
+                margin-bottom: 15px;
+            }
+            label{
+                display: block;
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 5px;
+            }
+            .error{
+              color: red;
+              font-size: 0.9em; 
+            }
+            button{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                width: 105%;
+                transition: 0.5s;
+            }
+            button:hover{
+                background-color: lightcoral;
+            }
+         </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Registration Form</h2>
+            <form id="registrationForm">
+                 <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="required">
+                    <span class="error" id="nameError"></span>
+                 </div>
+                 <div class="form-gruop">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" email="required">
+                    <span class="error" id="emailError"></span>
+                 </div>
+                 <div class="form-gruop">
+                    <label for="Password">Password:</label>
+                    <input type="password" id="name" password="required">
+                    <span class="error" id="passwordError"></span>
+                 </div>
+                 <button type="submit">Register</button>
+              </form>   
+        </div>
+    </body>
+</html>

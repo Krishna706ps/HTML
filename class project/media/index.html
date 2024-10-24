@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Photo Frame</title>
+</head>
+<body>
+    <div>
+        <img src="img/img01.jpeg" width="150px" id="photo01">
+        <img src="img/img02.jpeg" width="150px" id="photo02">
+        <img src="img/img03.jpeg" width="150px" id="photo03">
+    </div>
+    <div>
+        <img src="img/img01.jpeg" width="450px" id="photoFrame">
+    </div>
+    <script>
+        document.getElementById("photo01").addEventListener("click",function(){
+            document.getElementById("photoFrame").src="img/img01.jpeg";
+        });
+        document.getElementById("photo02").addEventListener("click",function(){
+            document.getElementById("photoFrame").src="img/img02.jpeg";
+        });
+        document.getElementById("photo03").addEventListener("click",function(){
+            document.getElementById("photoFrame").src="img/img03.jpeg";
+        });
+    </script>
+</body>
+</html>

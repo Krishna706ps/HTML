@@ -1,0 +1,363 @@
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+}
+
+/* Body */
+body {
+    overflow-x: hidden; 
+    justify-content: center;   
+    align-items: center;        
+    height: 100vh;             
+    margin: 0; 
+}
+
+/* Hero Section */
+.hero-head {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: black;
+}
+.wrapper h2{
+    font-size: 28px;
+    color: #fff;
+    background-color: #007ced;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+/* Header */
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Navigation */
+nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+
+nav .navlinks {
+    list-style-type: none;
+}
+
+nav .navlinks li {
+    display: inline-block;
+} 
+
+nav .navlinks li a {
+    display: inline-block;
+    margin-left: 5mm;
+    padding: 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav .navlinks li a:hover {
+    color: #007ced;
+}
+
+/* Hero Section Container */
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    flex-wrap: wrap;
+}
+
+/* Hero Image */
+.container .hero-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.container .hero-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hero Text */
+.container .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .hero-text h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.container .hero-text h3 {
+    font-size: 27px;
+    color: #007ced;
+    margin-bottom: 10px;
+}
+
+.container .hero-text p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.container .btn-group .btn {
+    background-color: #007ced;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .btn-group .btn.active {
+    background-color: #0047ab;
+}
+
+.container .btn-group .btn:hover {
+    background-color: red;
+}
+
+/* Portfolio Section */
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    width: 30%;
+    overflow: hidden;
+    cursor: pointer;
+    background: black;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Resume Section */
+.section-header {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #007ced;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.work-experience, .education {
+    margin-bottom: 40px;
+}
+
+.work-header, .education-header {
+    font-size: 28px;
+    color: #fff;
+    background-color: #007ced;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.work-experience ul, .education ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.work-experience ul li, .education ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Social Links */
+.social {
+    text-align: center;
+    padding: 20px;
+}
+
+.social a {
+    margin: 10px;
+    color: #007ced;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.social a:hover {
+    color: #005bb5;
+}
+
+/* Form Styles */
+.form {
+    display: flex;             
+    flex-direction: column;         
+    align-items: center;        
+    gap: 5px;                 
+    flex-wrap: wrap;  
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 0;       
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;                    
+    min-width: 150px;           
+    margin: 0px;           
+}
+
+label {
+    flex-basis: auto;           
+    text-align: right;           
+    padding-right: 10px;        
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;            
+    display: block;             
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+/* Mobile-First Media Query */
+@media (max-width: 768px) {
+    nav .togglebtn {
+        display: block;
+    }
+
+    nav .navlinks {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100%;
+        background-color: #333;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+
+    nav .navlinks.open {
+        right: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .hero-pic {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

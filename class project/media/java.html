@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1 id="title">Hello world!</h1>
+    <button onclick="changeText()">Click Me</button>
+    <p>Don't touch me</p>
+    <button id="myButton">Touch Me</button>
+    <button id="bgButton">Change the background</button>
+
+    <div>
+        <img src="img/img01.jpeg" width="150px" id="photo01">
+        <img src="img/img02.jpeg" width="150px" id="photo02">
+        <img src="img/img03.jpeg" width="150px" id="photo03">
+    </div>
+    <div>
+        <img src="img/img01.jpeg" width="450px" id="photoFrame">
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("title").innerHTML = "You clicked the button!";
+        }
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button clicked");
+        });
+
+        document.getElementById("bgButton").addEventListener("click", function() {
+            document.body.style.backgroundColor = "lightcyan";
+        });
+
+        document.getElementById("photo01").addEventListener("click", function() {
+            document.getElementById("photoFrame").src = "img/img01.jpeg";
+        });
+
+        document.getElementById("photo02").addEventListener("click", function() {
+            document.getElementById("photoFrame").src = "img/img02.jpeg";
+        });
+
+        document.getElementById("photo03").addEventListener("click", function() {
+            document.getElementById("photoFrame").src = "img/img03.jpeg";
+        });
+    </script>
+</body>
+</html>

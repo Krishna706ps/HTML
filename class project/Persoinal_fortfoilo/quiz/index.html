@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Basic HTML Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="0"> Home Tool Markup Language</label><br>
+                    <label><input type="radio" name="q1" value="0"> Hyperlinks and Text Markup Language</label><br>
+                    <label><input type="radio" name="q1" value="1"> Hyper Text Markup Language</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. Which HTML element is used to define a paragraph?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="0">&lt;head&gt;</label><br>
+                    <label><input type="radio" name="q2" value="1">&lt;p&gt;</label><br>
+                    <label><input type="radio" name="q2" value="0">&lt;div&gt;</label><br>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. What is the correct HTML for adding a background color?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="1">&lt;body style="background-color:yellow;"&gt;</label><br>
+                    <label><input type="radio" name="q3" value="0">&lt;background&gt;yellow&lt;/background&gt;</label><br>
+                    <label><input type="radio" name="q3" value="0">&lt;bgcolor&gt;yellow&lt;/bgcolor&gt;</label><br>
+                </div>
+            </div>
+            <button type="button" onclick="calculateScore()">Submit</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            let score = 0;
+            const totalQuestions = 3;
+            const form = document.getElementById('quizForm');
+
+            // Loop through each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const answer = form['q' + i].value;
+                score += parseInt(answer);
+            }
+
+            const result = document.getElementById('result');
+            result.textContent = `You scored ${score} out of ${totalQuestions}!`;
+
+            // Display a message based on the score
+            if (score === totalQuestions) {
+                result.textContent += " Excellent job!";
+            } else if (score > 0) {
+                result.textContent += " Good effort, try again for a perfect score!";
+            } else {
+                result.textContent += " Don't worry, keep practicing!";
+            }
+        }
+    </script>
+</body>
+</html>

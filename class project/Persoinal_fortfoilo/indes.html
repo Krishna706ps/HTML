@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero-head" id="home">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-k"></i>
+                    <div class="logo-text">Krishna</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/profile.jpg" alt="Profile picture of Krishna Prasad Sharma">
+                </div>
+                <div class="hero-text">
+                    <h1>Krishna Prasad Sharma</h1>
+                    <h3>Hi I'm <span class="input">Frontend Developer</span></h3>
+                    <p>Front-end developers create beautiful, user-friendly interfaces, blending design with functionality. They ensure websites are responsive, accessible, and visually appealing, enhancing user experiences and making digital interactions seamless and enjoyable.</p>
+                    <div class="btn-group">
+                        <a href="img/cv.pdf" class="btn active">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="wrapper">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="img/profile.jpg" alt="Screenshot of Project 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/robert.jpg" alt="Screenshot of Project 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/robert.jpg" alt="Screenshot of Project 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Resume Section -->
+<section id="resume" class="section">
+    <div class="wrapper">
+        <h2 class="section-header">Resume</h2>
+
+        <!-- Work Experience Section -->
+        <div class="work-experience">
+            <h3 class="work-header">Work Experience</h3>
+            <ul>
+                <li>Welding</li>
+                <li>Auto Mechanic</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="education">
+            <h3 class="education-header">Education</h3>
+            <ul>
+                <li>Completed Class 12 in the year 2022</li>
+                <li>Basic Entreprenurship Course</li>
+                <li>Studied as a trainee on Autonomous Mobile Robotics</li>
+                <li>Presently, I'm studying Diploma In Information Technology(DIT) in the RIM.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="wrapper">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+            
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+            
+                    <label for="message"></label>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+    </div>
+
+    <section>
+        <div class="testimonials">
+            <p>&copy; 2024 Krishna Prasad Sharma. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        /* Toggle navbar visibility */
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "Software Developer", "Web Developer", "Designer", "Welder"],
+            typeSpeed: 90,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Responsive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           line-height: 1.6;
+        }
+
+        header{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            border: solid;
+            background-color: blue;
+            gap: 1mm;
+        }
+
+        .sidebar {
+            background-color: lightblue;
+            padding: 1rem;
+            width: 80%;
+        }
+
+        .main-content {
+            background-color: lightblue;
+            padding: 1rem;
+            width: 75%;
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                display: none; /
+            }
+
+            .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Krishna Prasad Sharma</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content, visible on larger screens.</p>
+        </div>
+
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area that will adjust based on screen size.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</body>
+</html>
